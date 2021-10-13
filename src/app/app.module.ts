@@ -5,11 +5,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstsampleComponent } from './firstsample/firstsample.component';
+import { MyDirectivsDirective } from './customs/my-directivs.directive';
+import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
+import { CustomerlistComponent } from './customer/customerlist/customerlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstsampleComponent
+    FirstsampleComponent,
+    MyDirectivsDirective,
+    CustomerAddComponent,
+    CustomerlistComponent
   ],
   imports: [
     BrowserModule,

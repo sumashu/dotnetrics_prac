@@ -23,3 +23,10 @@
   <span *ngSwitchDefault>Enter a 0-4 number</span>
 </div>
 
+<h3 [appMyDirectivs]="selectedColor">this is heading tag</h3>
+<span [appMyDirectivs]="selectedColor">this is span tag</span>
+<br>
+<select [(ngModel)]="selectedColor">
+   <option *ngFor = "let c of color" >{{c}}</option> 
+</select>
+

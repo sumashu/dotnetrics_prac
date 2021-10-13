@@ -1,0 +1,7 @@
+<p>customer-add works!</p>
+
+<input type="text" [(ngModel)]="CustomerName"/>
+<input type="button" value="Add" (click)="addCustomer()">
+<p>{{Customers | json}}</p>
+
+<app-customerlist [customerskidukan] = "Customers" ></app-customerlist>

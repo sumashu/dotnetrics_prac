@@ -9,6 +9,7 @@ export class FirstsampleComponent implements OnInit {
    num1: number = 0;
    num2:number=0;
    color!: string[];
+   selectedColor!: string;
   constructor() { 
     this.color=['red','blue','green']
   }
