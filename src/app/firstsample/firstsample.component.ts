@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./firstsample.component.css']
 })
 export class FirstsampleComponent implements OnInit {
-
-  constructor() { }
+   num1: number = 0;
+   num2:number=0;
+   color!: string[];
+  constructor() { 
+    this.color=['red','blue','green']
+  }
 
   ngOnInit(): void {
   }

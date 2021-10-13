@@ -1,1 +1,25 @@
-<p>firstsample works!</p>
+<h3>odd even number *ngIF</h3>
+<input type="number" [(ngModel)]="num1"/>
+<div *ngIf="num1 %2 == 0 then eventemp else oddtemp"></div>
+
+    <ng-template #eventemp><span>{{num1}} is even number</span></ng-template>
+    <ng-template #oddtemp><span>{{num1}} is odd number</span></ng-template>
+
+
+<h3>list with *ngFor</h3> 
+
+<ul *ngFor="let list of color ; let i = index ; let  o = odd ; let e = even">
+    <li [ngClass]="{'r1': o, 'b1':e}">{{i+1}}{{list}}</li>
+</ul>
+
+<input type="number" [(ngModel)]="num2">
+
+<div [ngSwitch] = "num2">
+  <span *ngSwitchCase = "0">Sharukh</span>
+  <span *ngSwitchCase = "1">one</span>
+  <span *ngSwitchCase = "2">two</span>
+  <span *ngSwitchCase = "3">thee</span>
+  <span *ngSwitchCase = "4">four</span>
+  <span *ngSwitchDefault>Enter a 0-4 number</span>
+</div>
+

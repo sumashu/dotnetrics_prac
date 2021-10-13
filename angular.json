@@ -108,7 +108,8 @@
       "skipTests": true
     },
     "@schematics/angular:directives": {
-      "skipTests": true
+      "skipTests": true,
+      "prefix":"dir"
     },
     "@schematics/angular:class": {
       "skipTests": true

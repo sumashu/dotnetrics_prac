@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dotnet';
+  productname:string="laptop";
+  producid:string="agf"
+
+  clickMe()
+  {
+    alert(`this is product ${this.productname}`)
+  }
 }
