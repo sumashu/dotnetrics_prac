@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerAddComponent implements OnInit {
   CustomerName!:string;
-  Customers!:string[]
+  Customers!:string[];
+
+  employees = [{
+    name:"sumit",age:30,salary:300000
+  }]
   constructor() {
     this.Customers = [];
    }
@@ -18,6 +22,10 @@ export class CustomerAddComponent implements OnInit {
   addCustomer()
   {
    this.Customers.push(this.CustomerName);
+  }
+
+  readata(ndata: string){
+    this.CustomerName = ndata;
   }
 
 }

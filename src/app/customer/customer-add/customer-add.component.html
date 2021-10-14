@@ -4,4 +4,4 @@
 <input type="button" value="Add" (click)="addCustomer()">
 <p>{{Customers | json}}</p>
 
-<app-customerlist [customerskidukan] = "Customers" ></app-customerlist>
+<app-customerlist [customerskidukan] = "Customers" [empdtl] = "employees" (onselctedCust) = readata($event) ></app-customerlist>

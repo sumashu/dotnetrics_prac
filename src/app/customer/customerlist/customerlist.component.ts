@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-customerlist',
@@ -8,9 +8,21 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CustomerlistComponent implements OnInit {
   @Input('customerskidukan') 
   Custlist!:string[];
-  constructor() { }
+  @Input('empdtl')
+  employeeDetl!: any;
+  @Output('onselctedCust')
+  onselctedCust!:EventEmitter<string>;
+  
+  constructor() { 
+    this.onselctedCust = new EventEmitter;
+  }
 
   ngOnInit(): void {
+  }
+
+  SelctedCustomer(Custm: string)
+  {
+    this.onselctedCust.emit(Custm);
   }
 
 }

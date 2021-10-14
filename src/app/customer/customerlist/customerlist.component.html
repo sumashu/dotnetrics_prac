@@ -1,8 +1,18 @@
 <table>
     <tr>
         <th>Customer name</th>
+        <th>Select</th>
     </tr>
     <tr *ngFor="let customer of Custlist">
         <td>{{customer}}</td>
+        <td><input type="button" value="select" (click)=SelctedCustomer(customer)></td>
     </tr>
 </table>
+
+<ul *ngFor="let emp of employeeDetl">
+    <li>{{emp.name}}</li>
+    <li>{{emp.age}}</li>
+    <li>{{emp.salary}}</li>
+</ul>
+
+

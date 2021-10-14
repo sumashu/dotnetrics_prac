@@ -8,6 +8,7 @@ import { FirstsampleComponent } from './firstsample/firstsample.component';
 import { MyDirectivsDirective } from './customs/my-directivs.directive';
 import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
 import { CustomerlistComponent } from './customer/customerlist/customerlist.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CustomerlistComponent } from './customer/customerlist/customerlist.comp
     FirstsampleComponent,
     MyDirectivsDirective,
     CustomerAddComponent,
-    CustomerlistComponent
+    CustomerlistComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
